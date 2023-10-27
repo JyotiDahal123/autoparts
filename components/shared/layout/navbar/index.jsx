@@ -17,11 +17,11 @@ const items = [
         children: [
           {
             label: "Option 1",
-            key: "setting:1",
+            key: "setting:111",
           },
           {
             label: "Option 2",
-            key: "setting:2",
+            key: "setting:2222",
           },
         ],
       },
@@ -31,11 +31,11 @@ const items = [
         children: [
           {
             label: "Option 3",
-            key: "setting:3",
+            key: "setting:33",
           },
           {
             label: "Option 4",
-            key: "setting:4",
+            key: "setting:44",
           },
         ],
       },
@@ -60,14 +60,14 @@ const items = [
     children: [
       {
         type: "group",
-        label: "Item 1",
+        label: "Item",
         children: [
           {
-            label: "Option 1",
+            label: "Option",
             key: "setting:1",
           },
           {
-            label: "Option 2",
+            label: "Option",
             key: "setting:2",
           },
         ],

@@ -1,31 +1,134 @@
+import React, { useState } from "react";
 import { AlignCenterOutlined, SearchOutlined } from "@ant-design/icons";
-import { Input, Select, Space, Button, Avatar, Badge } from "antd";
+import {
+  Input,
+  Select,
+  Space,
+  Button,
+  Avatar,
+  Badge,
+  Drawer,
+  Menu,
+} from "antd";
 
 const { Search } = Input;
 const Searchbar = () => {
-  const options = [
+  const items = [
     {
-      value: "zhejiang",
-      label: "Zhejiang",
+      key: "1",
+      label: "Home",
+      href: "/",
     },
     {
-      value: "jiangsu",
-      label: "Jiangsu",
+      key: "2",
+      label: "Shop",
+      children: [
+        {
+          type: "group",
+          label: "Item 1",
+          children: [
+            {
+              label: "Option 1",
+              key: "setting:111",
+            },
+            {
+              label: "Option 2",
+              key: "setting:2222",
+            },
+          ],
+        },
+        {
+          type: "group",
+          label: "Item 2",
+          children: [
+            {
+              label: "Option 3",
+              key: "setting:33",
+            },
+            {
+              label: "Option 4",
+              key: "setting:44",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      key: "3",
+      label: "Tires & Wheels",
+    },
+    {
+      key: "4",
+      label: "Oils & Fluids",
+    },
+    {
+      key: "5",
+      label: "Blog",
+    },
+    {
+      key: "6",
+      label: "Tires & Wheels",
+      children: [
+        {
+          type: "group",
+          label: "Item",
+          children: [
+            {
+              label: "Option",
+              key: "setting:1",
+            },
+            {
+              label: "Option",
+              key: "setting:2",
+            },
+          ],
+        },
+      ],
     },
   ];
+
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState("left");
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="bg-[#082f49]">
       <div className="w-11/12 m-auto py-6 flex justify-between items-center gap-2">
         <div className="flex items-center gap-6">
           <img src="logo-auto.png" alt="logo" width={170} />
-          <div className="text-white  flex justify-center items-center gap-1 p-2 bg-slate-700 rounded hover:bg-slate-600">
-            <i className="bx bx-menu text-3xl"></i>
-            <p className="text-sm">Menu</p>
-          </div>
+
+          <Space className="">
+            <Button
+              className="text-white text-sm px-4 py-6   flex justify-center items-center gap-1  bg-slate-700 rounded hover:bg-slate-600 border-none"
+              onClick={showDrawer}
+            >
+              <i className="bx bx-menu text-3xl"></i> Menu
+            </Button>
+          </Space>
+          <Drawer
+            title={<img src="logo-dark.png" className="w-40" />}
+            placement={placement}
+            onClose={onClose}
+            open={open}
+            key={placement}
+            closable={true}
+          >
+            <Menu
+              mode="vertical"
+              items={items}
+              className="font-semibold text-[16px] w-10/12 py-1"
+            />
+          </Drawer>
         </div>
+
         <div className="w-1/2 border-2 border-orange-600 rounded-lg">
           <Space.Compact className="h-12 w-full">
-            <Select defaultValue="All" options={options} className="h-12" />
+            <Select defaultValue="All" className="h-12" />
             <Input
               type="text"
               className="outline-none border-r-0 border-t-0 border-b-0 border-l-1 border-gray-400"

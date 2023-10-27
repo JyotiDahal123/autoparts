@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Button, Dropdown } from "antd";
-import { DownOutlined, SmileOutlined } from "@ant-design/icons";
+import { Dropdown } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 const Topbar = () => {
   const lang_items = [
@@ -36,7 +36,7 @@ const Topbar = () => {
       <div className="w-11/12 m-auto flex justify-between text-[13px]  text-white py-3  ">
         <div className="flex gap-4">
           <Link href="/">
-            <i class="bx bx-package"></i> Track Order
+            <i className="bx bx-package"></i> Track Order
           </Link>
           <Link href="/">About Us</Link>
           <Link href="/">Contact</Link>
@@ -44,7 +44,7 @@ const Topbar = () => {
         </div>
         <div className="flex gap-4">
           <span>
-            <i class="bx bx-phone"></i> You can contact us 24/7
+            <i className="bx bx-phone"></i> You can contact us 24/7
           </span>
           <Link href="/" className="text-[#fbbf24]">
             0 800 300-353
