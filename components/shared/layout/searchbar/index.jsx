@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { AlignCenterOutlined, SearchOutlined } from "@ant-design/icons";
 import {
   Input,
@@ -100,7 +101,7 @@ const Searchbar = () => {
     <div className="bg-[#082f49]">
       <div className="w-11/12 m-auto py-6 flex justify-between items-center gap-2">
         <div className="flex items-center gap-6">
-          <img src="logo-auto.png" alt="logo" width={170} />
+          <Image src="/logo-auto.png" alt="logo" width={170} height={100} />
 
           <Space className="">
             <Button
@@ -111,7 +112,13 @@ const Searchbar = () => {
             </Button>
           </Space>
           <Drawer
-            title={<img src="logo-dark.png" className="w-40" />}
+            title={
+              <Image
+                src="/logo-dark.png"
+                width={170}
+                height={100}
+              />
+            }
             placement={placement}
             onClose={onClose}
             open={open}
