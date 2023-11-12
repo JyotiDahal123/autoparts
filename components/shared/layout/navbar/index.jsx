@@ -55,7 +55,7 @@ const items = [
   },
   {
     key: "6",
-    label: "Tires & Wheels",
+    label: "Best Discount",
     icon: <i className="bx bx-chevron-down"></i>,
     children: [
       {

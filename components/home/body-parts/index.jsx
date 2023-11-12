@@ -5,37 +5,37 @@ const BodyParts = () => {
     {
       label: "Body Parts",
       src: "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/body.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Brake Disks & Pads",
       src: "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/brakes.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Engine Parts",
       src: "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/transmission.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Filters",
       src: "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/filters.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Oils & Fluids",
       src: "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/oils.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Tires & Wheels",
       src: "https://klbtheme.com/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/tyres.png",
-      href: "/",
+      href: "/products",
     },
     {
       label: "Tools & Equipment",
       src: "https://klbtheme.com/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/tuning.png",
-      href: "/",
+      href: "/products",
     },
   ];
   return (

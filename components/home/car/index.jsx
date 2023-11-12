@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Card } from "antd";
+import Link from "next/link";
+
 const Car = () => {
   return (
     <div>
@@ -132,8 +134,8 @@ const Car = () => {
           </div>
         </div>
       </div>
-      <div>
-        <Card className="w-full ">
+      <div className="w-full h-full mb-8">
+        <div className="w-full relative">
           <Image
             src="https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/banner-67.jpg"
             alt=""
@@ -141,7 +143,28 @@ const Car = () => {
             height={300}
             className="w-full rounded-md"
           />
-        </Card>
+
+          <div className="absolute top-0 left-0 flex flex-col gap-2 p-10 w-3/5 ">
+            <p className="font-light text-lg text-orange-600">
+              Weekend Discount
+            </p>
+            <h2 className="text-4xl font-semibold text-white">
+              Durable car parts up for sale
+            </h2>
+            <p className="text-gray-400">
+              There Is No Sore It Will Not Heal, No Part It Will Not Subdue...
+            </p>
+            <div className="">
+              <Link
+                href="/products"
+                className="flex text-sm gap-2 bg-orange-600 text-white justify-center items-center px-3 py-2 rounded-3xl w-36 mt-2"
+              >
+                <spna>Shop now </spna>
+                <i class="bx bx-chevrons-right"></i>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="flex justify-between items-center gap-8 pb-6">
         <div className="flex items-center gap-8">

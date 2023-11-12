@@ -8,7 +8,7 @@ import WeekendDiscount from "./weekend-discount";
 import WheelsParts from "./products-parts";
 import Services from "./services";
 import OurNews from "./our-news";
-import Subscribe from "./subscribe";
+import Subscribe from "../shared/sub-components/subscribe";
 const Home = () => {
   const wheels_items = [
     {
@@ -160,20 +160,28 @@ const Home = () => {
   ];
   const banner1 = [
     {
+      title:"The best car parts on the planet",
+      dis:"Aftermarket, And on, And on...",
       imgItem:
         "https://klbtheme.com/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/banner-66.jpg",
     },
     {
+      title:"We import and export car parts",
+      dis:"Aftermarket, And on, And on...",
       imgItem:
         "https://klbtheme.com/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/banner-65.jpg",
     },
   ];
   const banner2 = [
     {
+      title:"The best car parts, guaranteed",
+      dis:"Only this week, Don't miss..,",
       imgItem:
         "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/banner-68.jpg",
     },
     {
+      title:"Only branded car parts inside",
+      dis:"Only this week, Don't miss..,",
       imgItem:
         "https://k4j3j2s7.rocketcdn.me/blonwe/autoparts/wp-content/uploads/sites/8/2023/05/banner-69.jpg",
     },
